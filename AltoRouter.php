@@ -54,6 +54,11 @@ class AltoRouter {
 		// Replace named parameters
 		$route = $this->namedRoutes[$routeName];
 		$url = $route;
+			// if ('soiree' === $routeName) {
+
+	 	// 		rx($route, "$routeName");
+
+			// }
 
 		if (preg_match_all('`(/|\.|)\[([^:\]]*+)(?::([^:\]]*+))?\](\?|)`', $route, $matches, PREG_SET_ORDER)) {
 
